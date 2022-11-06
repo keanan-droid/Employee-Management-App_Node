@@ -1,0 +1,23 @@
+    <div class="container">
+        <header class="header">
+            <router-outlet class="logo">GoalSetter</router-outlet>
+            <ul>
+                <!-- <li>
+                    <button class='btn'>
+                        <fa-icon [icon]="faSignOutAlt" class="svg"></fa-icon> Logout
+                    </button>
+                </li> -->
+        
+                <li>
+                    <router-outlet routerLink="/login" class="a">
+                        <fa-icon [icon]="faSignInAlt" class="svg"></fa-icon> Login
+                    </router-outlet>
+                </li>
+                <li>
+                    <router-outlet routerLink="/register" class="a">
+                        <fa-icon [icon]="faUserAlt" class="svg"></fa-icon> Register
+                    </router-outlet>
+                </li>
+            </ul>
+        </header>
+    </div>

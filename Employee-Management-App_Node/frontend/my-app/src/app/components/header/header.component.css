@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 60px;
+}
+    
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.header ul li {
+    margin-left: 20px;
+}
+    
+.a {
+    display: flex;
+    align-items: center;
+}
+    
+.a:hover {
+    color: #777;
+    cursor: pointer;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+    
+.svg {
+    margin-right: 5px;
+}
+    
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+    
+.heading p {
+    color: #828282;
+}

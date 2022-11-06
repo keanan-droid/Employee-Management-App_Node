@@ -1,0 +1,44 @@
+<div class="container">
+    <header class="header">
+        <router-outlet class="logo">GoalSetter</router-outlet>
+        <ul>
+            <li>
+                <button class='btn'>
+                    <router-outlet routerLink="">
+                        <fa-icon [icon]="faSignOutAlt" class="svg"></fa-icon> Logout
+                    </router-outlet>
+                </button>
+            </li>
+    
+            <li>
+                <button class='btn' (click)="this.show = !this.show">
+                    <router-outlet >
+                        <fa-icon [icon]="faSearch" class="svg"></fa-icon> Read
+                    </router-outlet>
+                </button>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <h1>
+          Welcome
+        </h1>
+        <p>User</p>
+    </section>
+
+    <section *ngIf="this.show">
+        <table class="database">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Password</th>
+            </tr>
+            <tr *ngFor='let user of this.readData;let i = index'>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.password}}</td>
+            </tr>
+        </table>
+    </section>
+</div>
